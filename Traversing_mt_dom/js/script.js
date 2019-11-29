@@ -12,7 +12,16 @@ $(document).ready(function() {
 	})
 
 	$(".card").click(function(){
-		$(this).toggleClass("background-color", )
+		$(this).toggleClass("background-color")
 	})
+
+	$("#select_btn").click(function() {
+		$(".card:not(.background-color)").hide();	 
+	});
+
+	// Select all cards
+	$("#all_btn").click(function(){
+		$(".card").show();	 
+	});
 
 });
