@@ -1,7 +1,18 @@
-$(document).ready(function() {
-	//sets <a> element within paragraph  to yellow  
+$(document).ready(function() { 
 	$("p").click(function(){
-		$(this).children("a").css("background-color", "yellow"); /* returns all the <a> child elements that are 
-		within this paragraph*/
+		$(this).children("a").css("background-color", "yellow");
 	});
+
+    $("button").click(function(){
+		$(this).prev().slideToggle("slow")
+	})
+
+	$("img").click(function(){
+		$(this).next().children("p").slideDown()
+	})
+
+	$(".card").click(function(){
+		$(this).toggleClass("background-color", )
+	})
+
 });
